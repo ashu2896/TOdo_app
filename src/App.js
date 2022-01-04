@@ -32,7 +32,7 @@ function FormTodo({ addTodo }) {
     <Form onSubmit={handleSubmit}> 
     <Form.Group>
       <Form.Label><b>Add Todo</b>
-      <h1>Todo items</h1>
+        
       </Form.Label>
       <Form.Control type="text" className="input" value={value} onChange={e => setValue(e.target.value)} placeholder="Add new todo" />
     </Form.Group>
@@ -46,7 +46,8 @@ function FormTodo({ addTodo }) {
 function App() {
   const [todos, setTodos] = React.useState([
     {
-      text: "This is a sampe todo",
+      text: "This is a sampe reminder todo list",
+     
       isDone: false
     }
   ]);
